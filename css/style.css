@@ -4,14 +4,39 @@
     box-sizing: border-box;
 }
 
-.container{
-    width: 80%;
-    margin: 20px auto;
+body{
+    font-family: 'Montserrat', sans-serif;
 }
 
-header div{
+.container{
+    width: 80%;
+    margin: 30px auto;
+}
+
+.logo{
+    width: 200px;
+    border-right: 1px solid lightgrey;
+}
+
+.logo img{
     width: 100%;
-    background-color: plum;
+    padding-right: 20px;
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    text-decoration-line: none;
+    color:gray;
+    padding-right: 10px;
+}
+
+nav ul{
+    padding: 30px 0;
 }
 
 .main{
@@ -52,9 +77,6 @@ header div{
     margin: 10px;
 }
 
-*:not(.main.bottom){
-    padding: 5px;
-}
 
 footer div{
     margin-top: 5px;
