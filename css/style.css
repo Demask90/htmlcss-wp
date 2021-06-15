@@ -4,9 +4,26 @@
     box-sizing: border-box;
 }
 
+/* common */
+
+.overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    border-radius: 10px;
+}
+
+.clearfix::after{ 
+    content: "";
+    display:table;
+    clear: both;
+}  
+
+/* common */
+
 body{
     font-family: 'Montserrat', sans-serif;
-    font-size: 140%;
+    font-size: 120%;
 }
 
 .container{
@@ -14,18 +31,18 @@ body{
     margin: 30px auto;
 }
 
-.logo{
-    width: 200px;
+header.logo{
+    width: 250px;
     border-right: 1px solid lightgrey;
 }
 
-.logo img{
+header.logo img{
     width: 100%;
     padding-right: 20px;
 }
 
 nav ul{
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
 nav ul li{
@@ -42,19 +59,18 @@ nav ul li a{
 
 .main{
     width: 100%;
-    margin-top: 20px;
+}
+
+.main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .main.top{
     position: relative;
     height: 650px;
-}
-
-.main.top img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
 }
 
 .main.top .text-position{
@@ -65,49 +81,48 @@ nav ul li a{
     color: white;
 }
 
-.text-position div{
+.main.top .text-position div{
     font-weight: 400;
     font-size: 170%;
 }
 
-.overlay{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
-    inset: 0;
-    border-radius: 10px;
+.main.bottom .title{
+    padding: 40px 0;
 }
 
-.main.bottom{
-    background-color: blue;
-    margin-top: 30px;
-}
-
-.main.bottom div{
-    background-color: cornflowerblue;
+.main.bottom .title div, .main.bottom p{
+    color: grey;
 }
 
 .main.bottom .float{
     float: left;
 }
 
-.clearfix::after{ 
-    content: "";
-    display:table;
-    clear: both;
-}  
-
-.main.bottom .side{
-    width: calc(100% / 5 - 5px);
+.main.bottom .float.side{
+    width: calc(100% / 5);
     margin: 10px 0;
 }
 
-.main.bottom .center{
-    width: calc((100% / 5) *3 - 10px);
+.main.bottom .float.center{
+    width: calc((100% / 5) *3 - 20px);
     margin: 10px;
 }
 
+.main.bottom .float h3{
+    padding: 20px 0 10px 0;
+}
 
-footer div{
-    margin-top: 5px;
-    background-color: blueviolet;
+.main.bottom .float .position-overlay{
+    position: relative;
+    height: 265px;
+}
+
+footer{
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer span{
+    color: red;
+    font-size: 200%;
 }
