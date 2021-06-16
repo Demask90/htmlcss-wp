@@ -8,7 +8,7 @@
 
 .overlay{
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.23);
     inset: 0;
     border-radius: 10px;
 }
@@ -31,12 +31,12 @@ body{
     margin: 30px auto;
 }
 
-header.logo{
-    width: 250px;
+header .logo{
+    width: 300px;
     border-right: 1px solid lightgrey;
 }
 
-header.logo img{
+header .logo img{
     width: 100%;
     padding-right: 20px;
 }
@@ -75,15 +75,15 @@ nav ul li a{
 
 .main.top .text-position{
     position: absolute;
-    width: 50%;
+    width: 55%;
     bottom: 60px;
     left: 40px;
     color: white;
 }
 
 .main.top .text-position div{
-    font-weight: 400;
-    font-size: 170%;
+    font-weight: 500;
+    font-size: 180%;
 }
 
 .main.bottom .title{
